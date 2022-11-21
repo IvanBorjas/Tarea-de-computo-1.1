@@ -1,0 +1,150 @@
+\documentclass[a4paper,10.5pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage[right=1.7cm,left=2.4cm,top=1.5in,bottom=1in]{geometry}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{tcolorbox}
+%----
+\usepackage{mathrsfs}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{latexsym}
+\usepackage{pifont}
+
+%---
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\usepackage[right]{sidecap}
+%----
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt} 
+\lhead{SF2A 2022\vspace{J. Richard, A. Siebert, E. Lagadec, N. Lagarde, O. Venot, J. Malzac, J.-B. Marquette, M. N’Diaye, D. Briot (eds)}}
+\rfoot{\small{© Société Française d’Astronomie et d’Astrophysique (SF2A) 2022}}
+
+\usepackage{emptypage}
+%---
+
+\author{nadiarosaleso }
+\date{November 2022}
+
+\begin{document}
+
+\begin{center}
+    \textbf{\\\vspace{2cm}\Large{\sf{IMPACT OF MAGNETISM ON GRAVITATIONAL WAVES EMITTED\\ BY COMPACT GALACTIC BINARIES IN QUASI-CIRCULAR ORBITS}}}
+\end{center}
+
+\text{A. Bourgoin$^{1,2}$, E. Savalle$^3$, C. Le Poncin-Lafitte$^1$, S. Mathis$^2$, M.-C. Angonin$^1$ and A. Strugarek$^2$}
+\\\vspace{0.4cm}\\
+
+{\large{\hspace{-2cm}{\rotatebox{90}{arXiv:2211.07431v1  [gr-qc]  14 Nov 2022}}}}\\\vspace{-8cm}
+
+{\small{\textbf{Abstract.} The LISA (Laser Interferometer Space Antenna) mission will observe in the low frequency band from 0:1 mHz to 1 Hz. In this regime, we expect the galactic binaries to be the dominant (by number)}\\ sources of gravitational waves signal. Considering that galactic binaries are composed of the most magnetized astrophysical objects in the universe (i.e., the white dwarfs and the neutron stars), LISA is expected to bring new informations about the origin and the nature of magnetism inside degenerated stars. Currently, the data processing assumes that the galactic binary systems are non-magnetic and in circular orbits which can potentially biased the determination of the parameters of the sources and also the calibration of the detector. In this work, we investigate the impact of magnetism on gravitational waves emitted by compact galactic binaries assuming quasi-circular orbits.\\\vspace{1mm}
+Keywords: white dwarfs, neutron stars, dipolar magnetic fields, gravitational waves}
+
+
+\section{\sf{\textbf{Introduction}}}
+By observing the low frequency bandwidth of the gravitational waves (GWs) spectrum (i.e., from 0:1 mHz to above 1 Hz), the Laser Interferometer Space Antenna (LISA) mission will bring precious informations concerning the galactic binaries (GBs) (Amaro-Seoane et al. 2017). Indeed, it is expected that the mission will simultaneously resolve more than ten thousand of these binary systems (Timpano et al. 2006). Among these, tenth of them, called ``verication binaries", are already known from electromagnetic observations and are identified as bright sources of GWs for LISA. They will serve for calibrating the sensitivity of the detector at first. Therefore, an error in modelling the signal from the verification binaries can potentially skew the determination of other extra-galactic sources observed by LISA. Currently, the data processing of the verification binaries assumes that GBs are quasi-monochromatic sources of GWs, which corresponds to the assumption that binary systems are inspiraling on circular orbits (Babak et al. 2020). However, GBs comprise white dwarfs (WDs) and neutron stars (NSs), which both exhibit complex internal processes and intense magnetic fields (up to 10 G for WDs and up to 10 9 15 G for NSs; see e.g., Ferrario et al. (2020)). Internal physics and magnetism can thus change the quasi-monochromatic picture of the GWs signal detected by LISA and hence biased the calibration of the detector or the determination of the physical parameters (e.g., masses, semi-major axis, etc.). As a matter of fact, it was recently shown by Bourgoin et al. (2022) that magnetism shifts all the frequencies present in the GWs signal. Therefore, in principle, LISA could let to measure the magnetism within thousand of binary systems and let to learn more about the origin and the nature of magnetism in degenerate stars by complementing spectropolarimetric electromagnetic observations (Bagnulo & Landstreet 2022).
+\\
+After recalling previous results from Bourgoin et al. (2022) concerning the impact of magnetism on GWs emitted by a binary system of degenerate stars in quasi-circular orbits, we comment on how magnetism and eccentricity would be processed while making use of the quasi-monochromatic algorithms of the LISA datacode challenge (LDC) (Babak et al. 2020).\\
+
+\rule{6cm}{0.1mm}
+{\tiny{
+\begin{enumerate}
+    \item SYRTE, Observatoire de Paris, PSL Research University, CNRS, Sorbonne Université, UPMC Univ. Paris 06, LNE, 61 avenue de l'Observatoire, 75014 Paris, France 2 
+    \item Département d'Astrophysique-AIM, CEA, CNRS, Université Paris-Saclay, Université Paris Cité, 91191 Gif-sur-Yvette, France 
+    \item Département de Physique des Particules, CEA, CNRS, Université Paris-Saclay, Université Paris Cité, 91191 Gif-sur-Yvette, France
+\end{enumerate}}}
+
+\section{\sf{\textbf{Orbital motion of a binary system and GWs emission}}}
+
+
+\fcolorbox{green}{white}{In Bourgoin et al.(2022)}, the authors considered two compact and well-separated degenerate stars in a binary system of total mass $m=m_1+m_2$ with $m_1$ and $m_2$ the masses of the primary and secondary, respectively. The secular evolution of the system is derived assuming a relativistic description of the point-mass dynamics up to the 2.5 post-Newtonian (PN) approximation \fcolorbox{green}{white}{(Blanchet 2014)} which is coherent with the fact that orbital energy is radiated away from the source by GWs. Magnetic effects are considered within the magnetostatic approximation through the dipole-dipole magnetic interaction which is coherent with the {\textit{``fossil fields"}} hypothesis \fcolorbox{green}{white}{(Ferrario \& Wickramasinghe 2005)}. In addition, following Shultz et al. \fcolorbox{green}{white}{(2015)}, it was assumed that both the direction of the magnetic dipole moments of the primary and secondary (labeled $\mu1$ and $\mu2$) are aligned with the direction of their spins. Within this framework, it was shown by solving simultaneously the orbital and rotational motions, that the magnetic dipole-dipole interaction generates secular drifts on the mean longitude (L) and on the longitude of the pericenter ($\varpi$) which are given by \fcolorbox{green}{white}{(Bourgoin et al. 2022)}
+\begin{equation} \tag{2.1}
+    \dot{\varpi} M=\frac{3\mu_0}{4\pi \sqrt{G}}\frac{\sqrt{m}}{m_1m_2} \frac{\mu_1 \mu_2 }{a^{\frac{7}{2}}} cos\in_1cos\in_2+O(e)^{2}
+\end{equation}
+\begin{equation}\tag{2.2}
+    \dot{L_M}= 2\dot{\varpi_M}+O(e)^{2}
+\end{equation}
+where G is the gravitational constant, µ0 is the magnetic permittivity of vacuum, a is the semi-major axis of the orbit, e is the eccentricity of the orbit, and $\in1$ and $\in2$are the obliquities of the magnetic dipole moments with respect to the orbital plane. From the secular evolution of the orbital motion, it is then possible to determine the mode polarizations of the GWs signal by making use of Einstein’s well-know quadrupole formula. The expression for the GWs mode polarization h+ (a similar expression for the GWs mode h× exists) is given by
+\begin{equation} \tag{2.3}
+    h_+ (t) = A(1+cos^{2}\iota)[cos(2\pi ft+\pi\dot{f}t^{2}+ \phi)+\frac{9e}{4} cos (2\pi f´t+\pi\dot{f´}t^{2}+ \phi´)+ ...],
+\end{equation}
+
+\thispagestyle{empty}
+
+where the “ellipses” refer to neglected terms at first and higher orders in eccentricity. A is the amplitude of the GWs signal (it varies as 1/a) and ι is the inclination of the orbit with respect to the plane which is orthogonal to the direction of propagation of the signal propagating towards the observer.$\phi$ and $ \phi ´$ are the phases at the origin (t = 0) and are given by $\phi = 2L_0$ and  $\phi = 3L_0 - \varpi_0$, where $L_0$ and $\varpi_0$ are the initial mean longitude and initial longitude of the pericenter, respectively. f and $\dot{f}$ are called the main frequency and the main frequency shift, respectively. They are related to the dynamics of the binary systems according to the following expressions
+\begin{equation}\tag{2.4}
+    2\pi f = 2n (1+ \frac{\dot{L}_{GR}}{n}+ \frac{\dot{L_M}}{n}), \quad 
+    \pi\dot{f}= \frac{3n}{2} \frac{|\dot{a}_{GR}|}{a},
+\end{equation}
+where the terms with the subscript “GR” refer to a secular contribution from general relativity (the expressions of these terms can be found in Bourgoin et al. (2022)) and where n is the mean motion of the orbit as given by Kepler third law of motion, namely n = (Gm/a3 ) 1/2 .\\
+The terms f´ 0 and $\dot{f ´}$ in Eq. (\fcolorbox{red}{white}{2.3}) are the frequency and the frequency shift of the first harmonic, respectively. As for the main frequency, they are related to the dynamics of the binary systems; they read as
+\begin{equation} \tag{2.5}
+     2\pi f = 3n( (1+ \frac{\dot{L}_{GR} - \dot{\varpi}_GR}{3n}+ \frac{3\dot{L_M}-\dot{\varpi}_M }{3n}, \quad 
+    \pi\dot{f´}= \frac{9n}{2} \frac{|\dot{a}_{GR}|}{a}.
+\end{equation}
+The frequency spectrum of the GWs mode polarization h+ \fcolorbox{red}{white}{ (see Eq. 2.3)} is represented schematically in figure 1. If we assume for a moment that the binary system is following a Keplerian orbit, the main frequency and the frequency of the first harmonic reduce respectively to $f = 2P^{−1} $  and $f = 3P^{−1}$ with P the period of the orbit. In these conditions, all effects other than the Newtonian acceleration between the two point-masses vanish so that $\dot{f} = 0$ and $\dot{f} = 0.$ This shows that a non-null eccentricity generates a GWs signal which is a superposition of monochromatic signals where the amplitude of the first harmonic is proportional to the eccentricity: $\frac{9e}{ 4}$ A with A being the amplitude of the main frequency peak. If the binary system is not anymore in Keplerian orbit, the frequencies of the signal are shifted by both general relativity (1PN terms) and magnetic effects (see Eqs. \fcolorbox{red}{white}{((2.4) and (2.5))}. General relativity \fcolorbox{red}{white}{(2.5PN terms)} also induces a drift of the frequencies due to
+\begin{figure}[H]
+    \centering
+    \caption{Magnetism and compact galactic binaries in quasi-circular orbits}
+    \includegraphics[scale=0.5]{Figura 1.png}
+    \caption{Illustration of the frequency spectrum of the GWs mode polarization $h_+$ emitted by a magnetic binary system in quasi-circular orbit. The dashed vertical lines represent the frequency peaks that would be observed for a binary system in quasi-circular orbit without magnetism. On the contrary, the thick plain vertical lines represent the same spectrum considering the magnetic effect. The black, red, and green colors represent the zeroth, first, and second order terms in eccentricity, respectively. The LDC quasi-monochromatic picture corresponds to the thick black vertical line only.
+}
+    \label{Figura 1}
+\end{figure}
+the change in the semi-major axis caused by the emission of GWs. Because the rate of change of the semi-major axis is slow for inspiral GBs, the full GWs signal becomes a superposition of quasi-monochromatic signals. If we now focus on the effect of the magnetic dipole-dipole interaction, we infer from Eqs. (\fcolorbox{red}{white}{2.4}) and (\fcolorbox{red}{white}{2.5}) that magnetism shifts the frequency (more precisely the pulsation) $kn$ with $k\in\mathbb{R}^+$ $\backslash\{0\}$ by the amount: ($k+2$)$\varpi_M$ with respect to the case without magnetism. Hence, if LISA is able to measure the main frequency of the GWs signal with the precision $\sigma_f$ that is lower than the magnetic shift, that is to say
+\begin{equation} \tag{2.6}
+\begin{split}
+\left(\frac{\sigma_f}{f}\right) < 6.8 \times 10^{-7}\left(\frac{f}{10^{-1}Hz}\right)^{4/3}\left(\frac{1.2M_\odot}{m_1}\right) \left(\frac{0.3M_\odot}{m_2}\right)\\ \times\left(\frac{B_1}{10^9G}\right)\left(\frac{B_2}{10^9G}\right) \left(\frac{R_1}{6\times10^3km}\right)^3 \left(\frac{R_2}{15\times 10^3km} \right)^3,
+\end{split}
+\end{equation}
+then, one should be careful while attempting to interpret the measured frequency directly in term of the binary’s masses since part of the frequency might have a magnetic origin. In the last inequality, we assumed a binary made of two highly magnetic white dwarfs, assuming Eq. (3) of \fcolorbox{green}{white}{Pablo et al.} (\fcolorbox{green}{white}{2019}) as expressions for both magnetic moments with B and R denoting the magnetic field and radius, respectively. Let us emphasize that verification binaries are actually known with relative uncertainties ranging from $10^{-6}$ to $10^{-9}$ (\fcolorbox{green}{white}{Gaia Collaboration et al. 2018}), and we expect LISA to reach even higher precision.
+
+
+\thispagestyle{empty}
+\section{\sf{\textbf{Data processing using the LDC quasi-monochromatic picture
+}}}
+
+Currently the data processing pipeline developed in the LDC considers that the GWs signal from GBs is quasi- monochromatic (cf. Eq. (\fcolorbox{red}{white}{2.1}) with $e=0$). We now want to explore how the total GWs signal in Eq. (\fcolorbox{red}{white}{2.3}) (i.e., with $e\not=0$ ), which corresponds to the case of a magnetic GB in quasi-circular orbit, would be processed by the quasi-monochromatic LDC tool. To do this, we simulate 4 years of LISA data by generating the three time delay interferometry channels (i.e., A, E, and T) from the GWs mode polarizations $h_+$ and $h_x$ derived in the previous section (\fcolorbox{red}{white}{cf. Eq. (2.3)} with $e=0.1$ while considering all terms up to $O(e^2)$. Then, the simulated data are analyzed using LDC “fastGB” algorithm for quasi-monochromatic GB.
+As can be seen in the left panel in figure \fcolorbox{red}{white}{2}, the central peak of the gravitational wave is easily identified and all parameters can be correctly estimated. The good uncertainties obtained on the central frequency and the frequency shift allow us to disentangle between the magnetic and the eccentric effects. Thus, a lack of knowledge on the eccentricity or magnetism could lead to a bias in the catalog of GBs. The frequency of\vspace{1mm}  
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.5]{Figura 2.png}
+    \caption{Parameter estimates from LDC quasi-monochromatic algorithm of 4 years simulated LISA data. The source of the GWs is a magnetic GB in quasi-circular orbit with $e = 0.1$. Left: parameter estimates of the main frequency peak (at 2n). Right: parameter estimates of the main harmonic (at 3n). “NGB”, “EGB”, “MGB”, and “EMGB” stand for “non-magnetic GB”, “eccentric GB”, “magnetic GB”, and “eccentric magnetic GB”, respectively.
+}
+    \label{Figura 2}
+\end{figure} \vspace{1mm} 
+the first harmonic of the GWs can also be detected by the algorithms (see the right panel in figure \fcolorbox{red}{white}{2}) and provides a suitable parameter estimate. With current algorithms, this peak could be interpreted as a new source with a lower amplitude and frequency. Again, this could biased the GBs’ catalog.
+\thispagestyle{empty}
+\section{\sf{\textbf{Conclusion}}}
+In this work, we first derived the secular orbital motion of a GB in quasi-circular orbit considering general relativity up to the 2.5PN approximation and the magnetic dipole-dipole interaction. Then, we derived the expressions of the mode polarizations. The total GWs signal is thus a superposition of quasi-monochromatic signals. From this signal, we simulated 4 years of LISA data and analyzed it with LDC tools. We showed that the first harmonic at 3n is detected as a new GB which can biased population studies from future LISA catalog.
+
+\thispagestyle{empty}
+\section*{\sf{\textbf{References}}}
+Amaro-Seoane, P., Audley, H., Babak, S., et al. 2017
+\\
+Babak, S., Le Jeune, M., Petiteau, A., \& Vallisneri, M. 2020, LISA-LCST-SGS-MAN-001, Rev. 1
+\\
+Bagnulo, S.\& Landstreet, J. D. 2022, ApJ, 935, L12
+\\
+Blanchet, L. 2014, Living Reviews in Relativity, 17
+\\
+Bourgoin, A., Le Poncin-Lafitte, C., Mathis, S., \& Angonin, M. C. 2022, Phys. Rev. D, 105, 124042
+\\
+Ferrario, L., Wickramasinghe, D., \& Kawka, A. 2020, Advances in Space Research, 66, 1025
+\\
+Ferrario, L. \& Wickramasinghe, D. T. 2005, MNRAS, 356, 615
+\\
+Gaia Collaboration, Brown, A. G. A., Vallenari, A., et al. 2018, A\&A, 616, A1
+\\
+Pablo, H., Shultz, M., Fuller, J., et al. 2019, MNRAS, 488, 64
+\\
+Shultz, M., Wade, G. A., Alecian, E., \& BinaMIcS Collaboration. 2015, MNRAS, 454, L1
+\\
+Timpano, S. E., Rubbo, L. J., \& Cornish, N. J. 2006, Phys. Rev. D, 73, 122001 
+
+\end{document}
+
